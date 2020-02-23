@@ -6,7 +6,8 @@
     "authors": [
         {
             "name": "Ashish Suthar",
-            "email": "asissuthar@gmail.com"
+            "email": "asissuthar@gmail.com",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
