@@ -5,7 +5,7 @@ namespace Msg91;
 use GuzzleHttp\Client as HttpClient;
 use Psr\Http\Message\ResponseInterface;
 
-final class OTPClient
+final class OtpClient
 {
     private const BASE_API  = 'https://api.msg91.com/api/v5/';
 
@@ -57,67 +57,67 @@ final class OTPClient
         ]);
     }
 
-    public function setAuthKey(string $authKey): OTPClient
+    public function setAuthKey(string $authKey): OtpClient
     {
         $this->authKey = $authKey;
         return $this;
     }
 
-    public function setTemplateId(string $templateId): OTPClient
+    public function setTemplateId(string $templateId): OtpClient
     {
         $this->templateId = $templateId;
         return $this;
     }
 
-    public function setExtraParams(array $extraParams): OTPClient
+    public function setExtraParams(array $extraParams): OtpClient
     {
         $this->extraParams = json_encode($extraParams);
         return $this;
     }
 
-    public function setMobile(int $mobile): OTPClient
+    public function setMobile(int $mobile): OtpClient
     {
         $this->mobile = $mobile;
         return $this;
     }
 
-    public function setInvisible(bool $invisible): OTPClient
+    public function setInvisible(bool $invisible): OtpClient
     {
         $this->invisible = $invisible ? 1 : 0;
         return $this;
     }
 
-    public function setOTP(int $otp): OTPClient
+    public function setOTP(int $otp): OtpClient
     {
         $this->otp = $otp;
         return $this;
     }
 
-    public function setUserIP(string $userIP): OTPClient
+    public function setUserIP(string $userIP): OtpClient
     {
         $this->userIP = $userIP;
         return $this;
     }
 
-    public function setEmail(string $email): OTPClient
+    public function setEmail(string $email): OtpClient
     {
         $this->email = $email;
         return $this;
     }
 
-    public function setOTPLength(int $otpLength): OTPClient
+    public function setOTPLength(int $otpLength): OtpClient
     {
         $this->otpLength = $otpLength;
         return $this;
     }
 
-    public function setOTPExpiry(int $otpExpiry): OTPClient
+    public function setOTPExpiry(int $otpExpiry): OtpClient
     {
         $this->otpExpiry = $otpExpiry;
         return $this;
     }
 
-    public function setRetryType(string $retryType): OTPClient
+    public function setRetryType(string $retryType): OtpClient
     {
         $this->retryType = $retryType;
         return $this;

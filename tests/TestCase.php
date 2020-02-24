@@ -2,7 +2,7 @@
 
 namespace Msg91\Tests;
 
-use Msg91\OTPClient;
+use Msg91\OtpClient;
 use PHPUnit\Framework\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase
@@ -13,7 +13,7 @@ class TestCase extends BaseTestCase
     {
         $authKey = "";
         $templateId = "";
-        $this->otpClient = new OTPClient($authKey, $templateId);
+        $this->otpClient = new OtpClient($authKey, $templateId);
     }
 
     public function testClient(): void
