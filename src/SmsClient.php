@@ -24,6 +24,10 @@ final class SmsClient
 
     public function __construct(string $authKey, string $sender)
     {
+        $this
+            ->setAuthKey($authKey)
+            ->setSender($sender);
+
         $this->httpClient = new HttpClient([
             'base_uri' => self::BASE_API
         ]);
